@@ -1,1 +1,387 @@
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ROLEX E-SPORTS | Official Tournament</title>
+
+<style>
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+ font-family:Arial,sans-serif;
+}
+
+body{
+ background:#080808;
+ color:white;
+}
+
+header{
+ text-align:center;
+ padding:22px 10px;
+ background:#111;
+ border-bottom:2px solid #d4af37;
+}
+
+.logo{
+ color:#e5c45b;
+ font-size:30px;
+ font-weight:900;
+ letter-spacing:2px;
+}
+
+header p{
+ color:#aaa;
+ font-size:12px;
+ margin-top:7px;
+}
+
+.hero{
+ text-align:center;
+ padding:55px 15px;
+ background:linear-gradient(140deg,#241b05,#080808,#302200);
+}
+
+.hero h1{
+ color:#e5c45b;
+ font-size:34px;
+ margin:18px 0;
+}
+
+.hero p{
+ color:#ccc;
+}
+
+.prize{
+ font-size:43px;
+ color:#ffd700;
+ font-weight:bold;
+ margin:15px;
+}
+
+.tag{
+ display:inline-block;
+ background:#d4af37;
+ color:black;
+ padding:10px 23px;
+ border-radius:5px;
+ font-weight:bold;
+}
+
+.container{
+ width:92%;
+ max-width:550px;
+ margin:25px auto;
+}
+
+.card{
+ background:#151515;
+ padding:22px;
+ border:1px solid #55451b;
+ border-radius:12px;
+ margin-bottom:20px;
+}
+
+h2{
+ color:#e5c45b;
+ margin-bottom:17px;
+}
+
+.info{
+ display:flex;
+ justify-content:space-between;
+ padding:13px 0;
+ border-bottom:1px solid #333;
+ font-size:14px;
+}
+
+.info strong{
+ color:#e5c45b;
+}
+
+input{
+ width:100%;
+ padding:14px;
+ margin:8px 0;
+ background:#080808;
+ border:1px solid #444;
+ border-radius:6px;
+ color:white;
+ outline:none;
+}
+
+input:focus{
+ border-color:#d4af37;
+}
+
+.player-title{
+ color:#e5c45b;
+ margin-top:17px;
+ font-weight:bold;
+}
+
+.check{
+ display:flex;
+ align-items:flex-start;
+ gap:10px;
+ margin-top:17px;
+ color:#ddd;
+ font-size:13px;
+}
+
+.check input{
+ width:18px;
+ height:18px;
+ margin:0;
+ accent-color:#d4af37;
+}
+
+button,.insta{
+ display:block;
+ width:100%;
+ padding:15px;
+ margin-top:18px;
+ background:#d4af37;
+ color:black;
+ font-size:15px;
+ font-weight:bold;
+ border:none;
+ border-radius:6px;
+ text-align:center;
+ text-decoration:none;
+ cursor:pointer;
+}
+
+.insta{
+ background:#202020;
+ color:#e5c45b;
+ border:1px solid #d4af37;
+}
+
+.note{
+ color:#aaa;
+ font-size:12px;
+ line-height:1.8;
+ margin-top:13px;
+}
+
+footer{
+ text-align:center;
+ padding:25px;
+ color:#888;
+ font-size:12px;
+ border-top:1px solid #333;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+ <div class="logo">ROLEX E-SPORTS</div>
+ <p>OFFICIAL FREE FIRE MAX TOURNAMENT</p>
+</header>
+
+<section class="hero">
+ <span class="tag">FREE ENTRY</span>
+
+ <h1>PLAY HARD. WIN BIG.</h1>
+
+ <p>JOIN THE ULTIMATE ESPORTS BATTLE</p>
+
+ <div class="prize">₹10,000</div>
+
+ <p>MEGA PRIZE POOL</p>
+</section>
+
+<div class="container">
+
+<!-- TOURNAMENT DETAILS -->
+
+<div class="card">
+
+ <h2>🏆 Tournament Details</h2>
+
+ <div class="info">
+  <span>Entry Fee</span>
+  <strong>FREE</strong>
+ </div>
+
+ <div class="info">
+  <span>Prize Pool</span>
+  <strong>₹10,000</strong>
+ </div>
+
+ <div class="info">
+  <span>Game</span>
+  <strong>Free Fire MAX</strong>
+ </div>
+
+ <div class="info">
+  <span>Team Size</span>
+  <strong>4 Players</strong>
+ </div>
+
+</div>
+
+<!-- REGISTRATION FORM -->
+
+<div class="card">
+
+ <h2>🎮 Team Registration</h2>
+
+ <form id="registrationForm">
+
+  <input id="team"
+  placeholder="Enter Team Name" required>
+
+  <input id="captain"
+  placeholder="Captain Name" required>
+
+  <input id="phone"
+  type="tel"
+  placeholder="Captain WhatsApp Number"
+  pattern="[0-9]{10}"
+  maxlength="10"
+  required>
+
+  <div class="player-title">PLAYER 1 (CAPTAIN)</div>
+  <input id="p1" placeholder="Player 1 Name" required>
+  <input id="u1" placeholder="Player 1 Free Fire UID" required>
+
+  <div class="player-title">PLAYER 2</div>
+  <input id="p2" placeholder="Player 2 Name" required>
+  <input id="u2" placeholder="Player 2 Free Fire UID" required>
+
+  <div class="player-title">PLAYER 3</div>
+  <input id="p3" placeholder="Player 3 Name" required>
+  <input id="u3" placeholder="Player 3 Free Fire UID" required>
+
+  <div class="player-title">PLAYER 4</div>
+  <input id="p4" placeholder="Player 4 Name" required>
+  <input id="u4" placeholder="Player 4 Free Fire UID" required>
+
+  <label class="check">
+   <input type="checkbox" id="follow" required>
+   I have followed AKAZA EDITZ on Instagram.
+  </label>
+
+  <label class="check">
+   <input type="checkbox" id="rules" required>
+   I confirm all 4 player details are correct.
+  </label>
+
+  <button type="submit">
+   REGISTER TEAM ON WHATSAPP
+  </button>
+
+ </form>
+
+ <p class="note">
+  ⚠️ All 4 players are compulsory.
+  Incomplete teams may be rejected or removed
+  from the lobby.
+ </p>
+
+</div>
+
+<!-- RULES -->
+
+<div class="card">
+
+ <h2>📢 Important Rules</h2>
+
+ <p class="note">
+  1. All 4 team members must be present in the lobby.<br><br>
+
+  2. Follow AKAZA EDITZ on Instagram.<br><br>
+
+  3. Room ID and Password will be shared in the WhatsApp group.<br><br>
+
+  4. Incomplete teams may be kicked from the lobby.
+ </p>
+
+ <a class="insta"
+ href="https://www.instagram.com/akaza_hun_zii?gwpx=MXcyYTRmaWlpa3Zpeg=="
+ target="_blank">
+ FOLLOW AKAZA EDITZ ON INSTAGRAM
+ </a>
+
+</div>
+
+</div>
+
+<footer>
+ © 2026 ROLEX E-SPORTS<br>
+ ALL RIGHTS RESERVED
+</footer>
+
+<script>
+
+document.getElementById("registrationForm")
+.addEventListener("submit",function(e){
+
+ e.preventDefault();
+
+ const ids=[
+ "team","captain","phone",
+ "p1","u1","p2","u2",
+ "p3","u3","p4","u4"
+ ];
+
+ const v={};
+
+ ids.forEach(id=>{
+  v[id]=document.getElementById(id).value.trim();
+ });
+
+ const message=
+`🏆 ROLEX E-SPORTS TEAM REGISTRATION
+
+TEAM NAME: ${v.team}
+
+CAPTAIN: ${v.captain}
+WHATSAPP: ${v.phone}
+
+PLAYER 1:
+${v.p1}
+UID: ${v.u1}
+
+PLAYER 2:
+${v.p2}
+UID: ${v.u2}
+
+PLAYER 3:
+${v.p3}
+UID: ${v.u3}
+
+PLAYER 4:
+${v.p4}
+UID: ${v.u4}
+
+ENTRY FEE: FREE
+PRIZE POOL: ₹10,000
+
+INSTAGRAM: AKAZA EDITZ
+
+PLEASE CONFIRM MY TEAM REGISTRATION.`;
+
+ const whatsappNumber="919359028872";
+
+ const url=
+ "https://wa.me/"+whatsappNumber+
+ "?text="+encodeURIComponent(message);
+
+ window.location.href=url;
+
+});
+
+</script>
+
+</body>
+</html>
